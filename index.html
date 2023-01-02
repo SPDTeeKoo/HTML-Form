@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Data</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">FORM</h1>
+    <p id="description">Form for Hostel Accomodation</p>
+    <form class="container" id="form">
+      <div class="form-group">
+        <label for="first-name">FIRST NAME:</label>
+        <input
+          type="text"
+          id="first-name"
+          name="fname"
+          placeholder="first name"
+          required
+        />
+
+        <label for="last-name">LAST NAME:</label>
+        <input
+          type="text"
+          id="last-name"
+          name="lname"
+          placeholder="last name"
+          required
+        />
+
+        <label for="address">ADDRESS:</label>
+        <textarea
+          id="address"
+          name="add"
+          placeholder="Your Permanent Address"
+          required
+        >
+        </textarea>
+
+        <label for="pincode">PIN CODE:</label>
+        <input
+          type="text"
+          id="pincode"
+          placeholder="Area Pincode"
+          name="pin"
+          required
+        />
+
+        <label for="state">STATE:</label>
+        <input
+          type="text"
+          id="state"
+          name="state"
+          placeholder="State"
+          required
+        />
+
+        <label for="count">COUNTRY:</label>
+        <input
+          type="text"
+          id="count"
+          name="count"
+          placeholder="country"
+          required
+        />
+
+        <p class="sub-container" id="sex">
+          GENDER:
+
+          <input type="radio" name="sex" id="male" value="male" checked />Male
+
+          <input type="radio" name="sex" id="female" value="female" /> Female
+
+          <input type="radio" name="sex" id="bisex" value="bisex" /> Bisexual
+        </p>
+        <div class="sub-container" id="food">
+          FOOD CHOICE:
+
+          <input type="radio" name="food" id="veg" value="veg" checked />Veg
+
+          <input type="radio" name="food" id="nonveg" value="nonveg" />
+          Non-Vegeterian
+        </div>
+        <button id="submit" type="submit" class="btn btn-primary">
+          Submit
+        </button>
+      </div>
+    </form>
+    <div>
+      <table id="show" class="table">
+        <thead>
+          <tr>
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>ADDRESS</th>
+            <th>PIN CODE</th>
+            <th>STATE</th>
+            <th>COUNTRY</th>
+            <th>GENDER</th>
+            <th>FOOD CHOICE</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  </body>
+</html>
